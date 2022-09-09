@@ -1,5 +1,5 @@
 pipeline {
- stages {
+
    agent any
 
    tools{
@@ -45,7 +45,5 @@ pipeline {
             sh "mvn -B -DskipTests clean install"
          }
       }
-
-	}
-  }
+}
 }
