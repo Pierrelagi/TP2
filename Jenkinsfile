@@ -3,7 +3,7 @@ pipeline {
    agent any
 
    tools{
-      maven 'mon_maven_auto'
+      maven 'tp premier test'
    }
 
    stages {
@@ -24,7 +24,7 @@ pipeline {
       }
 	  stage('Compile'){
          steps{
-            withMaven(maven:'mon_maven_auto')
+            withMaven(maven:'tp premier test')
             {
               sh "mvn compile"
             }
@@ -32,7 +32,7 @@ pipeline {
       }
       stage('Test'){
          steps{
-            withMaven(maven:'mon_maven_auto')
+            withMaven(maven:'tp premier test')
             {
               sh "mvn test"
             }
